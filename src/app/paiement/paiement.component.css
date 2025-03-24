@@ -1,0 +1,49 @@
+.payment-container {
+    background-color: #7db17f;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  
+  .summary p {
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .payment-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payment-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 50%;
+  }
+ 
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .cancel-button {
+    background-color: red;
+    color: white;
+    width: 40%;
+    margin-left: 30%;
+  }

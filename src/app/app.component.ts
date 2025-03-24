@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: '<router-outlet></router-outlet>', // Utilisation de <router-outlet> pour rendre les routes
+  standalone: true,
+  imports: [
+    RouterOutlet
+  ],
+  // Ce composant est également autonome
 })
 export class AppComponent {
-  title = 'app-agrimarket';
+
 }
