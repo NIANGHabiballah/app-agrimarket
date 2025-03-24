@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriMarket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-white shadow-md">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-green-600">
+      Agri<span class="text-yellow-500">Market</span>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="flex space-x-4">
+      <a href="#"><i class="fab fa-facebook text-gray-700 hover:text-green-600"></i></a>
+      <a href="#"><i class="fab fa-pinterest text-gray-700 hover:text-green-600"></i></a>
+      <a href="#"><i class="fab fa-instagram text-gray-700 hover:text-green-600"></i></a>
+    </div>
+
+    <!-- Infos de contact -->
+    <div class="flex space-x-6 text-sm">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-phone text-green-600"></i>
+        <span>+221 78 229 72 21</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-envelope text-green-600"></i>
+        <span>contact&#64;agrimarket.com</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-map-marker-alt text-green-600"></i>
+        <span>Dakar - Kaolack - St Louis</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-gray-50 shadow-sm">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Menu -->
+      <ul class="flex space-x-6 text-gray-700">
+        <li><a routerLink="/" class="hover:text-green-600 font-semibold">Accueil</a></li>
+        <li><a routerLink="/apropos" class="hover:text-green-600">À propos</a></li>
+        <li class="relative group">
+          <a routerLink="/produits" class="hover:text-green-600">Produits</a>
+        </li>
+        <li><a routerLink="/contact" class="hover:text-green-600">Contact</a></li>
+      </ul>
+
+      <!-- Icônes Recherche & Panier -->
+      <div class="flex space-x-4">
+        <input type="search" style="border-radius: 10px; height: 30px; border: 2px solid black;" class="hover:text-green-600">
+        <a href="#" class="text-gray-700 hover:text-green-600"><i class="fas fa-search"></i></a>
+        <a href="#" class="text-gray-700 hover:text-green-600 relative">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs px-0 rounded-full">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<section class="relative z-9 h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+         style="background-image: url('bgagrimarket.jpg'); z-index: 0; height: 450px;">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-6xl font-bold">Les Meilleures Productions<br>de Votre Région</h2>
+    <p class="mt-4 text-lg md:text-xl">Découvrez les produits locaux les plus frais et de la meilleure qualité.</p>
+    <a href="#" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700">Découvrez Agrimarket</a>
+  </div>
+</section>
+<section class="bg-white py-16">
+  <div class="container mx-auto px-6">
+
+    <!-- Cartes du haut -->
+    <div class="relative z-10 flex justify-center space-x-6 mb-12" style="margin-top: -150px;">
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="partenaire.jpg" alt="Partenaire" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 class="text-lg font-semibold">Devenir Partenaire</h3>
+      </div>
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="vendre.jpg"
+             alt="Vendre" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 class="text-lg font-semibold">Vendre vos Produits</h3>
+      </div>
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="production.jpg"
+             alt="Exploitation" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 class="text-lg font-semibold">Inscrire votre Exploitation</h3>
+      </div>
+    </div>
+
+    <!-- Section principale -->
+    <div class="flex flex-wrap items-center">
+
+      <!-- Images circulaires -->
+      <div class="w-full md:w-1/2 relative">
+        <img src="agriculture.jpg" alt="Agriculture" class="w-3/4 mx-auto rounded-full shadow-lg">
+        <img src="main.jpg" alt="Main" class="w-1/4 absolute left-10 bottom-0 rounded-full shadow-lg border-4 border-white">
+      </div>
+
+      <!-- Texte -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-yellow-500 font-semibold" style="font-weight: 800; font-size: 30px;">Notre Histoire, Notre Passion</h2>
+        <h3 class="text-1xl md:text-2xl font-bold text-gray-900 mt-2">
+          Le lien entre producteurs et consommateurs locaux
+        </h3>
+        <p class="text-green-600 font-semibold mt-4">L'Origine de Notre Projet</p>
+        <p class="text-gray-700 mt-2">
+          Né de la volonté de reconnecter les producteurs locaux avec les consommateurs, notre plateforme est créée pour valoriser l’excellence agricole de notre région.
+        </p>
+
+        <!-- Icônes et valeurs -->
+        <div class="flex space-x-6 mt-6">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-leaf text-green-600 text-2xl"></i>
+            <span>Se nourrir sainement</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-recycle text-green-600 text-2xl"></i>
+            <span>Éliminer les déchets toxiques</span>
+          </div>
+        </div>
+
+        <ul class="mt-4 text-gray-700">
+          <li>✔️ Authenticité des produits locaux</li>
+          <li>✔️ Transparence dans nos relations</li>
+        </ul>
+
+        <!-- Bouton -->
+        <a href="#" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700">
+          Découvrez plus
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#f8f6f1] py-16">
+  <div class="container mx-auto px-6 text-center">
+
+    <!-- Titre -->
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Ce que nous vous offrons</h2>
+
+    <!-- Cartes des services -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+      <!-- Carte 1 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="consommateurs.jpg" alt="Consommateurs" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/2917/2917995.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Service Consommateur</p>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="producteurs.jpg" alt="Producteurs" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/10757/10757991.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Services Producteurs</p>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="gestionproduits.jpg" alt="Gestion des produits" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/8524/8524294.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Gestion des Produits</p>
+        </div>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="venteproduits.jpg" alt="Ventes des produits" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/188/188333.png" class="w-6 h-6">
+            <span class="text-green-600 font-semibold text-sm">Read More</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Ventes des produits</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Statistiques -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Produits agricoles</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Projets terminés</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Clients satisfaits</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Agriculteurs experts</div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section grande">
+      <h2 class="logo">AgriMarket</h2>
+      <p>
+        Une plateforme innovante dédiée au secteur agricole,
+        facilitant la connexion entre producteurs, fournisseurs et consommateurs.
+        Elle offre une large gamme de produits agricoles, des équipements modernes
+        et des solutions pour optimiser la production.
+      </p>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div><br>
+
+    <div class="footer-section">
+      <h3>Explorez</h3>
+      <ul>
+        <li><a routerLink="/apropos">À propos</a></li>
+        <li><a routerLink="/produits">Produits</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>News</h3>
+      <p>Apporter de la production</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone"></i> +221 78 229 72 21</p>
+      <p><i class="fas fa-envelope"></i> contact&#64;agrimarket.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Sénégal - Dakar - Kaolack</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Email Address">
+        <button><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="footer-bottom">
+    <p>© 2025 Tous droits réservés.</p>
+    <p><a href="#">M1S2 Groupe 3</a> | <a href="#">Ingénierie Logicielle</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
