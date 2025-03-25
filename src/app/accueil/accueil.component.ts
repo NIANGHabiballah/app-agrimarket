@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterLink, RouterModule} from '@angular/router';
 import { NavComponent } from "../nav/nav.component";
-import { FooterComponent } from "./footer/footer.component"; // Importation du module commun de base
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-accueil',

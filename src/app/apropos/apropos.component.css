@@ -141,7 +141,7 @@ section{
     text-shadow: 1px 1px 3px #000;
 }
 .brandFooter{
-    background: #000000;
+    background: #4CAF50;
     padding: 4rem 0;
     display: flex;
     justify-content: space-evenly;
@@ -158,3 +158,4 @@ section{
     font-family: poppins;
     font-size: 14px;
 }
+

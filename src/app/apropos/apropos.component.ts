@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavComponent } from "../nav/nav.component";
-import { FooterComponent } from "../accueil/footer/footer.component";
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-apropos',

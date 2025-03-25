@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {RouterLink} from '@angular/router'; 
 import * as bootstrap from 'bootstrap';
 import { NavComponent } from "../nav/nav.component";
-import { FooterComponent } from "../accueil/footer/footer.component";
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-produits',
