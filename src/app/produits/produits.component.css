@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav ul li a {
+    font-weight: 1000;
+    cursor: pointer;
+  }
+  
+  
+  .section{
+    margin: 0;
+  }
+  
+  #new{
+    margin-top: 100px;
+
+  }

@@ -1,0 +1,76 @@
+.footer {
+    background-color: #1a1a16;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px; /* Largeur max pour éviter que le contenu soit trop étiré */
+    margin: 0 auto; /* Centre le footer horizontalement */
+    padding: 0 40px; /* Ajoute une marge latérale */
+  }
+  
+  .footer-section {
+    width: 22%;
+  }
+  
+  .footer-section h2, .footer-section h3 {
+    color: #ffffff;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: #aaaaaa;
+    text-decoration: none;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .social-icons i {
+    margin: 10px 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .newsletter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .newsletter input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriMarket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <app-nav></app-nav>
+<div id="new" class="relative h-screen bg-cover bg-center" style="background-image: url('rh.jpg'); margin-left: -60px; z-index: -9; height: 400px;">
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+  <div class="relative z-9 flex flex-col justify-center items-center h-full text-white text-center">
+      <h1 class="text-6xl font-bold text-yellow-400" style="font-family: 'Pacifico', cursive;"> <span class="text-green-600">Agri</span>Market</h1>
+      <p class="text-4xl font-semibold">Produits Frais du Jour</p>
+      <a href="#" class="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600">Découvrez plus</a>
+  </div>
+</div>
+
+<section class="bg-white shadow-lg rounded-lg p-6 flex justify-around items-center -mt-12 mx-6 max-w-4xl mx-auto z-10">
+  <div class="text-center">
+      <img src="transport.png" alt="Retour possible" class="mx-auto h-12">
+      <p class="text-green-600 font-semibold">Retour possible</p>
+      <p class="text-gray-500 text-sm">Money Back Guarantee</p>
+  </div>
+  <div class="text-center">
+      <img src="retour.png" alt="Livraison gratuite" class="mx-auto h-12">
+      <p class="text-green-600 font-semibold">Livraison Gratuite</p>
+      <p class="text-gray-500 text-sm">On All Orders Over $45.00</p>
+  </div>
+  <div class="text-center">
+      <img src="marche.png" alt="Marché sur place" class="mx-auto h-12">
+      <p class="text-green-600 font-semibold">Marché sur place</p>
+      <p class="text-gray-500 text-sm">Find Your Nearest Store</p>
+  </div>
+</section>
+
+<section class="text-center py-12">
+  <p class="text-yellow-500 font-semibold">Ajoutez Récemment</p>
+  <h2 class="text-4xl font-bold">Derniers Produits</h2>
+  <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto mt-8" style="margin: 100px;">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="onions.png" alt="Ognions" class="mx-auto" style="height: 180px;">
+          <p class="text-lg font-bold mt-4">Ognions</p>
+          <p class="text-green-500 font-semibold">2000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="/detailsproduits"> Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="salade.png" alt="Salade" class="mx-auto">
+          <p class="text-lg font-bold mt-4">Salade</p>
+          <p class="text-green-500 font-semibold">5000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="tomatoo.png" alt="Tomate" class="mx-auto">
+          <p class="text-lg font-bold mt-4">Tomate</p>
+          <p class="text-green-500 font-semibold">5000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+        <img src="raisins.png" alt="raisins" class="mx-auto" style="height: 195px;">
+        <p class="text-lg font-bold mt-4">Raisins</p>
+        <p class="text-green-500 font-semibold">2000 F CFA</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <div class="mt-4 flex justify-center gap-2 w-full">
+          <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+          <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+      </div>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+        <img src="aille.png" alt="aille" class="mx-auto">
+        <p class="text-lg font-bold mt-4">Aille</p>
+        <p class="text-green-500 font-semibold">5000 F CFA</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <div class="mt-4 flex justify-center gap-2 w-full">
+          <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+          <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+      </div>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+        <img src="perssi.png" alt="perssi" class="mx-auto">
+        <p class="text-lg font-bold mt-4">Perssi</p>
+        <p class="text-green-500 font-semibold">5000 F CFA</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <div class="mt-4 flex justify-center gap-2 w-full">
+          <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+          <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="relative h-screen bg-cover bg-center" style="background-image: url('bg.jpeg'); margin-left: -60px; z-index: -9; height: 350px; margin-top: -100px;">
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+  <div class="relative z-9 flex flex-col justify-center items-center h-full text-white text-center">
+      <p class="text-4xl font-semibold">Produits Frais du Jour</p>
+      <a href="#" class="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600">Découvrez plus</a>
+  </div>
+</div>
+
+<section class="text-center py-12" style="margin-top: -45px;">
+  <h2 class="text-4xl font-bold">Produits</h2>
+  <div class="grid grid-cols-4 gap-6 max-w-6xl mx-auto mt-8" style="margin: 100px;">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="carrots.png" alt="carrots" class="mx-auto" style="height: 185px;">
+          <p class="text-lg font-bold mt-4">Carrots</p>
+          <p class="text-green-500 font-semibold">2000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="aubergine.png" alt="aubergine" class="mx-auto">
+          <p class="text-lg font-bold mt-4">Aubergine</p>
+          <p class="text-green-500 font-semibold">5000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2"  routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <img src="piment.png" alt="piment verte" class="mx-auto">
+          <p class="text-lg font-bold mt-4">Piment Verte</p>
+          <p class="text-green-500 font-semibold">5000 F CFA</p>
+          <p class="text-yellow-500">★★★★★</p>
+          <div class="mt-4 flex justify-center gap-2 w-full">
+            <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" routerLink="">Détails</button>
+        </div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+        <img src="pomme.png" alt="pomme de terre" class="mx-auto" style="height: 185px;">
+        <p class="text-lg font-bold mt-4">Pomme de terre</p>
+        <p class="text-green-500 font-semibold">5000 F CFA</p>
+        <p class="text-yellow-500">★★★★★</p>
+        <div class="mt-4 flex justify-center gap-2 w-full">
+          <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yelllow-600 w-1/2" routerLink="/paiement">Acheter</button>
+          <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 w-1/2" (click)="openModal()" routerLink="">Détails</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<app-footer></app-footer>
+
+</body>
+</html>

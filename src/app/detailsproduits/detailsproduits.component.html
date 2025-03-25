@@ -1,0 +1,41 @@
+<div class="product-container">
+    <div class="product-image">
+      <img src="onions.png" alt="Ognio">
+    </div>
+    <div class="product-details">
+      <h1>Ognio <span class="price">5000</span></h1>
+      <p>
+        Découvrez nos Ognio fraîches et savoureuses, cultivées avec soin pour vous offrir une qualité exceptionnelle. Idéales pour vos salades, sauces, plats cuisinés ou simplement dégustées nature, nos tomates sont gorgées de soleil et de saveurs.
+      </p>
+      <div class="quantity">
+        <label>Quantité</label>
+        <mat-form-field appearance="outline">
+          <input matInput type="number" min="1" max="100" value="1">
+        </mat-form-field>
+      </div>
+      <div class="buttons">
+        <button mat-raised-button color="success" (click)="order()" class="Commander">Commander</button>
+        <button mat-raised-button color="accent" (click)="addToWishlist()">Ajouter au panier</button>
+      </div>
+      <div class="social-share">
+        <span>Partager avec vos amis</span>
+        <button mat-icon-button><mat-icon>facebook</mat-icon></button>
+        <button mat-icon-button><mat-icon>linkedin</mat-icon></button>
+        <button mat-icon-button><mat-icon>pinterest</mat-icon></button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="description">
+    <h2>Description</h2>
+    <ul>
+      <li>Variété : Ognio, juteuses et parfaitement mûres.</li>
+      <li>Goût : Sucré et légèrement acidulé, pour une explosion de saveurs à chaque bouchée.</li>
+      <li>Utilisation : Salades, sauces, soupes, grillades ou en accompagnement.</li>
+      <li>Conditionnement : Disponibles en vrac ou en barquettes de 1 kg.</li>
+    </ul>
+  </div>
+  <script>
+  
+  </script>
+  

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriMarket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<app-nav></app-nav>
+<!-- <router-outlet></router-outlet> -->
+
+<section id="new" class="relative z-9 h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+         style="background-image: url('bgagrimarket.jpg'); z-index: 0; height: 450px;">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-6xl font-bold">Les Meilleures Productions de Votre Région</h2>
+    <p class="mt-4 text-lg md:text-xl">Découvrez les produits locaux les plus frais et de la meilleure qualité.</p>
+    <a href="produits" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700">Découvrez Agrimarket</a>
+  </div>
+</section>
+<section class="bg-white py-16">
+  <div class="container mx-auto px-6">
+
+    <!-- Cartes du haut -->
+    <div class="relative z-10 flex justify-center space-x-6 mb-12" style="margin-top: -150px;">
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="partenaire.jpg" alt="Partenaire" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 id="colT" class="text-lg font-semibold">Devenir Partenaire</h3>
+      </div>
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="vendre.jpg"
+             alt="Vendre" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 id="colT" class="text-lg font-semibold">Vendre vos Produits</h3>
+      </div>
+      <div class="bg-green-600 shadow-lg rounded-lg p-6 text-center w-1/4">
+        <img src="production.jpg"
+             alt="Exploitation" class="w-16 h-16 mx-auto mb-4 rounded-full">
+        <h3 id="colT" class="text-lg font-semibold">Inscrire votre Exploitation</h3>
+      </div>
+    </div>
+
+    <!-- Section principale -->
+    <div class="flex flex-wrap items-center">
+
+      <!-- Images circulaires -->
+      <div class="w-full md:w-1/2 relative">
+        <img src="agriculture.jpg" alt="Agriculture" class="w-3/4 mx-auto rounded-full shadow-lg">
+        <img src="main.jpg" alt="Main" class="w-1/4 absolute left-10 bottom-0 rounded-full shadow-lg border-4 border-white">
+      </div>
+
+      <!-- Texte -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-yellow-500 font-semibold" style="font-weight: 800; font-size: 30px;">Notre Histoire, Notre Passion</h2>
+        <h3 class="text-1xl md:text-2xl font-bold text-gray-900 mt-2">
+          Le lien entre producteurs et consommateurs locaux
+        </h3>
+        <p class="text-green-600 font-semibold mt-4">L'Origine de Notre Projet</p>
+        <p class="text-gray-700 mt-2">
+          Né de la volonté de reconnecter les producteurs locaux avec les consommateurs, notre plateforme est créée pour valoriser l’excellence agricole de notre région.
+        </p>
+
+        <!-- Icônes et valeurs -->
+        <div class="flex space-x-6 mt-6">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-leaf text-green-600 text-2xl"></i>
+            <span>Se nourrir sainement</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-recycle text-green-600 text-2xl"></i>
+            <span>Éliminer les déchets toxiques</span>
+          </div>
+        </div>
+
+        <ul class="mt-4 text-gray-700">
+          <li>✔️ Authenticité des produits locaux</li>
+          <li>✔️ Transparence dans nos relations</li>
+        </ul>
+
+        <!-- Bouton -->
+        <a href="produits" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700">
+          Découvrez plus
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#f8f6f1] py-16">
+  <div class="container mx-auto px-6 text-center">
+
+    <!-- Titre -->
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Ce que nous vous offrons</h2>
+
+    <!-- Cartes des services -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+      <!-- Carte 1 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="consommateurs.jpg" alt="Consommateurs" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/2917/2917995.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Service Consommateur</p>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="producteurs.jpg" alt="Producteurs" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/10757/10757991.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Services Producteurs</p>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="gestionproduits.jpg" alt="Gestion des produits" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/8524/8524294.png" class="w-6 h-6" alt="">
+            <span class="text-green-600 font-semibold text-sm">Lire Plus</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Gestion des Produits</p>
+        </div>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="venteproduits.jpg" alt="Ventes des produits" class="w-full h-56 object-cover">
+        <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex items-center space-x-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/188/188333.png" class="w-6 h-6">
+            <span class="text-green-600 font-semibold text-sm">Read More</span>
+          </div>
+          <p class="text-gray-900 font-semibold mt-1">Ventes des produits</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Statistiques -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Produits agricoles</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Projets terminés</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Clients satisfaits</div>
+      <div class="bg-green-600 text-white py-4 px-6 rounded-lg text-center font-semibold">Agriculteurs experts</div>
+    </div>
+
+  </div>
+</section>
+
+<app-footer></app-footer>
+
+</body>
+</html>

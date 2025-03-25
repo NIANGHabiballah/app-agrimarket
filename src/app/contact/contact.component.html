@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+      <!-- filepath: /C:/Users/DELL/Downloads/app-agrimarket/src/app/app.component.html -->
+<app-nav></app-nav>
+<router-outlet></router-outlet>
+    <div id="new" class="contact-container">
+        <h1>Contactez-nous</h1>
+        <p>Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
+      
+        <form (ngSubmit)="envoyerMessage()">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" [(ngModel)]="nom" name="nom" placeholder="Entrez votre nom" required>
+          
+          <label for="email">Email :</label>
+          <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Entrez votre email" required>
+          
+          <label for="message">Message :</label>
+          <textarea id="message" [(ngModel)]="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+          
+          <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <app-footer></app-footer>
+</body>
+</html>

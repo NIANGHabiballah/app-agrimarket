@@ -1,0 +1,58 @@
+
+<!-- filepath: /C:/Users/DELL/Downloads/app-agrimarket/src/app/nav/nav.component.html -->
+
+<header class="bg-white shadow-md">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-green-600">
+      Agri<span class="text-yellow-500">Market</span>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="flex space-x-4">
+      <a href="#"><i class="fab fa-facebook text-gray-700 hover:text-green-600"></i></a>
+      <a href="#"><i class="fab fa-pinterest text-gray-700 hover:text-green-600"></i></a>
+      <a href="#"><i class="fab fa-instagram text-gray-700 hover:text-green-600"></i></a>
+    </div>
+
+    <!-- Infos de contact -->
+    <div class="flex space-x-6 text-sm">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-phone text-green-600"></i>
+        <span>+221 78 229 72 21</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-envelope text-green-600"></i>
+        <span>contact&#64;agrimarket.com</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-map-marker-alt text-green-600"></i>
+        <span>Dakar - Kaolack - St Louis</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-gray-50 shadow-sm">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Menu -->
+      <ul class="flex space-x-6 text-gray-700">
+        <li><a routerLink="/" class="hover:text-green-600 font-semibold">Accueil</a></li>
+        <li><a routerLink="/apropos" class="hover:text-green-600">À propos</a></li>
+        <li class="relative group">
+          <a routerLink="/produits" class="hover:text-green-600">Produits</a>
+        </li>
+        <li><a routerLink="/contact" class="hover:text-green-600">Contact</a></li>
+      </ul>
+
+      <!-- Icônes Recherche & Panier -->
+      <div class="flex space-x-4">
+        <input type="search" style="border-radius: 10px; height: 30px; border: 2px solid black;" class="hover:text-green-600">
+        <a href="#" class="text-gray-700 hover:text-green-600"><i class="fas fa-search"></i></a>
+        <a href="#" class="text-gray-700 hover:text-green-600 relative">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs px-0 rounded-full">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

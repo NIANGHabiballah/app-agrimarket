@@ -1,0 +1,44 @@
+.product-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 5%;
+  }
+  
+  .product-image img {
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  .product-details {
+    max-width: 400px;
+  }
+  
+  .price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .quantity {
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .social-share {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .description {
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+
+  .commander{
+    margin-left: 20px;
+  }
